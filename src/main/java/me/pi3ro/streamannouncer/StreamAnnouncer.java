@@ -24,7 +24,7 @@ public class StreamAnnouncer extends JavaPlugin {
                 .binding(new BukkitBindings())
                 .build()
                 .register(StreamCommand.class);
-        Bukkit.getConsoleSender().sendMessage(CC.translate("&e[Stream Announcer] &aEnabled."));
+        Bukkit.getConsoleSender().sendMessage(CC.translate("&e[Stream Announcer] &aPlugin enabled."));
     }
     public void onDisable() {
         instance = null;
