@@ -10,12 +10,12 @@ public class StreamCommand {
     @Permission(value = "streamannouncer.use", message = "No permission.")
     public static void streamCommnad(@Sender Player player) {
 
-        player.sendMessage(CC.translate("&7&m---------------------------------"));
+        player.sendMessage(CC.CHAT_BAR);
         player.sendMessage(CC.translate("&e&lStream Announcer Commands:"));
         player.sendMessage(CC.translate(" "));
         player.sendMessage(CC.translate("&e/stream &7- &fView this page."));
         player.sendMessage(CC.translate("&e/stream announce (link) &7- &fAnnounce your stream on the server."));
-        player.sendMessage(CC.translate("&7&m---------------------------------"));
+        player.sendMessage(CC.CHAT_BAR);
     }
 
     @Command(value = {"stream announce"}, async = true, quoted = false)
